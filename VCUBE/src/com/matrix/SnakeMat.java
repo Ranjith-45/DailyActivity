@@ -3,8 +3,12 @@ import java.util.*;
 public class SnakeMat {
 
 	
-
-	
+//  1 → 2 → 3
+//          ↓
+//  6 ← 5 ← 4
+//  ↓
+//  7 → 8 → 9
+//	
 
 	    static ArrayList<Integer> snakePattern(int matrix[][]) {
 
