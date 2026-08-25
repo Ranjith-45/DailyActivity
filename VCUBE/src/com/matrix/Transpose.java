@@ -3,9 +3,6 @@ import java.util.*;
 
 public class Transpose {
 	
-
-	
-
 	    public ArrayList<ArrayList<Integer>> transpose(int[][] mat) {
 
 	        ArrayList<ArrayList<Integer>> list = new ArrayList<>();
