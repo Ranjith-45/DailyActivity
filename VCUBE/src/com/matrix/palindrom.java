@@ -2,9 +2,6 @@ package com.matrix;
 import java.util.*;
 public class palindrom {
 
-
-
-
 	    public String palindromeRowOrCol(int[][] arr) {
 
 	        // Check rows first
@@ -26,7 +23,7 @@ public class palindrom {
 	            }
 
 	            if (status) {
-	                return i + "r";
+	                return i + " r";
 	            }
 	        }
 
@@ -49,7 +46,7 @@ public class palindrom {
 	            }
 
 	            if (status) {
-	                return j + "c";
+	                return j + " c";
 	            }
 	        }
 
