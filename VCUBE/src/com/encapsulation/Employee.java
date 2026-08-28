@@ -16,7 +16,7 @@ public class Employee {
 	}
 	public void setEname(String ename) {
 		this.ename=ename+"vcube";
-		
+		 
 	}
 	public String getEname() {
 		return ename;
