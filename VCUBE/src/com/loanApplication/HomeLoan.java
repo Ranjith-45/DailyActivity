@@ -10,7 +10,7 @@ public class HomeLoan extends loanImpl {
 
 	        System.out.println("WELCOME to Ranjith's Bank");
 
-	        personalLoan obj = new personalLoan();
+	        HomeLoan obj = new HomeLoan();
 
 	        String name = obj.getName();
 
