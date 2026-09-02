@@ -13,14 +13,14 @@ public class PatientImpl implements Patient{
 	protected String address;
 	public String disease;
 	
-	public PatientImpl() {
-		this.name=name;
-		this.age=age;
-		this.address=address;
-		this.gender=gender;
-		this.pid=pid;
-		this.phone=phone;
-	}
+//	public PatientImpl() {
+//		this.name=name;
+//		this.age=age;
+//		this.address=address;
+//		this.gender=gender;
+//		this.pid=pid;
+//		this.phone=phone;
+//	}
 	
 	
 	@Override
