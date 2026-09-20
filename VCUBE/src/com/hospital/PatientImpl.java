@@ -1,74 +1,96 @@
 package com.hospital;
-import java.util.*;
 
+public class PatientImpl implements Patient {
 
+    private String name;
+    private int age;
+    private String gender;
+    private String pid;
+    private String disease;
+    private String phone;
+    private String address;
 
-public class PatientImpl implements Patient{
-	Scanner sc=new Scanner(System.in);
-	protected String name;
-	protected String gender;
-	protected int age;
-	protected String pid;
-	protected String phone;
-	protected String address;
-	public String disease;
-	
-//	public PatientImpl() {
-//		this.name=name;
-//		this.age=age;
-//		this.address=address;
-//		this.gender=gender;
-//		this.pid=pid;
-//		this.phone=phone;
-//	}
-	
-	
-	@Override
-	public String getName() {
-		System.out.println("Enter patient name:");
-		String name=sc.nextLine();
-		return name;
-	}
-	@Override
-	public int getAge() {
-		System.out.println("Enter Patient Age:");
-		int age=sc.nextInt();
-		return age;
-	}
-	@Override
-	public String getGender() {
-		System.out.println("Enter Gender");
-		String gender=sc.next();
-		return gender;
-	}
-	@Override
-	public String getPatientId() {
-		Random random = new Random();
+    // Constructor
+    public PatientImpl() {
+    }
 
-        int number = random.nextInt(100000); // 0 to 99999
+    // Parameterized Constructor
+    public PatientImpl(String name, int age, String gender, String pid,
+                       String disease, String phone, String address) {
 
-        String pid = String.valueOf(number);
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.pid = pid;
+        this.disease = disease;
+        this.phone = phone;
+        this.address = address;
+    }
 
-        System.out.println("PID: " + pid);
+    // Getters
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public int getAge() {
+        return age;
+    }
+
+    @Override
+    public String getGender() {
+        return gender;
+    }
+
+    @Override
+    public String getPatientId() {
         return pid;
-	}
-	@Override
-	public String getDisease() {
-		System.out.println("What kind of disease are yo suffering with:");
-		String disease =sc.next();
-		return disease;
-	}
-	@Override
-	public String getPhone() {
-		System.out.println("Enter phone Number:");
-		String phone=sc.next();
-		return phone;
-	}
-	@Override
-	public String getAddress() {
-		System.out.println("Enter your address :");
-		String address= sc.nextLine();
-		return address;
-	}
+    }
 
+    @Override
+    public String getDisease() {
+        return disease;
+    }
+
+    @Override
+    public String getPhone() {
+        return phone;
+    }
+
+    @Override
+    public String getAddress() {
+        return address;
+    }
+
+    // Setters
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setPatientId(String pid) {
+        this.pid = pid;
+    }
+
+    public void setDisease(String disease) {
+        this.disease = disease;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }

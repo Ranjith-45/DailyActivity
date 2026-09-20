@@ -13,19 +13,21 @@ package com.hospital;
 //7. Display All Patients
 //8. Exit
 
+
+
 public interface Patient {
 
     String getName();
-    
+
     int getAge();
-    
+
     String getGender();
-    
+
     String getPatientId();
-    
+
     String getDisease();
-    
+
     String getPhone();
-    
+
     String getAddress();
 }
